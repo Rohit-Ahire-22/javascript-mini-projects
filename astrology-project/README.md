@@ -65,16 +65,17 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
 1.  **Clone the Repository**
+    Replace `your-username` with your GitHub username:
     ```bash
     git clone https://github.com/your-username/javascript-mini-projects.git
     ```
 
-2.  **Navigate to the Folder**
+3.  **Navigate to the Folder**
     ```bash
     cd my-js-project/astrology-project
     ```
 
-3.  **Run the App**
+4.  **Run the App**
     * Simply double-click `index.html` to open it in your browser.
     * *Optional:* Use Live Server in VS Code for a better experience.
 
