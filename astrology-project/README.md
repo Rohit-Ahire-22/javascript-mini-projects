@@ -10,21 +10,17 @@
 
 ---
 
-## 🖼️ Project Preview
-
-![Project Screenshot](https://via.placeholder.com/800x400/2a3d66/ffffff?text=Astrology+Insights+UI+Preview)
-
 ## 📖 Table of Contents
-- [About the Project](#-about-the-project)
-- [Tech Stack](#-tech-stack)
-- [How It Works (The Logic)](#-how-it-works-the-logic)
-- [Features](#-features)
-- [Setup & Installation](#-setup--installation)
-- [Collection Context](#-javascript-mini-projects)
+- [About the Project](#about)
+- [Tech Stack](#tech-stack)
+- [How It Works (The Logic)](#logic)
+- [Features](#features)
+- [Setup & Installation](#setup)
+- [Collection Context](#context)
 
 ---
 
-## 🔍 About the Project
+## 🔍 About the Project <a name="about"></a>
 
 The **Astrology Insights Engine** is a vanilla JavaScript application designed to demonstrate DOM manipulation and algorithmic data retrieval. Unlike random fortune generators, this app uses **deterministic math** to map user inputs (Name, DOB) to specific indices in pre-defined data arrays.
 
@@ -32,7 +28,7 @@ The result is a consistent, personalized "reading" that includes your Zodiac sig
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack <a name="tech-stack"></a>
 
 | Domain | Technologies Used |
 | :--- | :--- |
@@ -42,7 +38,7 @@ The result is a consistent, personalized "reading" that includes your Zodiac sig
 
 ---
 
-## ⚙️ How It Works (The Logic)
+## ⚙️ How It Works (The Logic) <a name="logic"></a>
 
 The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) to handle array indexing, ensuring the app never crashes even with large number inputs.
 
@@ -56,7 +52,7 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 
 ---
 
-## 🚀 Features
+## 🚀 Features <a name="features"></a>
 
 * **✨ Semantic Form Handling**: Prevents default submission to process data via JS.
 * **🎨 Responsive Design**: Centered layout with a deep-space gradient background (`#4a90e2` to `#50c1e9`).
@@ -65,7 +61,7 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 
 ---
 
-## 💻 Setup & Installation
+## 💻 Setup & Installation <a name="setup"></a>
 
 Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
@@ -85,7 +81,7 @@ Since this project uses **Vanilla JavaScript**, no `npm install` or build steps 
 
 ---
 
-## 📦 JavaScript Mini Projects
+## 📦 JavaScript Mini Projects <a name="context"></a>
 
 > **Note:** This project is part of a larger collection.
 
