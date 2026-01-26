@@ -5,7 +5,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge" alt="Maintained">
-  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge" alt="License">
 </p>
 
 ---
