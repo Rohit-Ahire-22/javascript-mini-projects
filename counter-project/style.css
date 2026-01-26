@@ -1,0 +1,25 @@
+#count{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.butcontainer{
+    text-align: center;   
+}
+
+.button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(168, 163, 163, 0.874);
+    color: aliceblue;
+    border-radius: 10px;
+    margin-inline: 5px ;
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+}
+
+.button:hover{
+    background-color: rgb(46, 45, 45);
+}
