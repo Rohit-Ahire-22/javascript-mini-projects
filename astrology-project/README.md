@@ -65,7 +65,7 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
 1.  **Clone the Repository**
-    Replace `your-username` with your GitHub username:
+    Replace `your-username` with your GitHub username
     ```bash
     git clone https://github.com/your-username/javascript-mini-projects.git
     ```
