@@ -72,7 +72,7 @@ Since this project uses **Vanilla JavaScript**, no `npm install` or build steps 
 
 3.  **Navigate to the Folder**
     ```bash
-    cd javscript-mini-projects/astrology-project
+    cd javascript-mini-projects/astrology-project
     ```
 
 4.  **Run the App**
