@@ -115,8 +115,8 @@ If you are using VS Code, right-click `index.html` and select **Open with Live S
 
 Contributions are always welcome! If you have a cool idea for a mini-project or want to improve an existing one, follow these steps:
 
-1. Fork the repository  
-2. Create your feature branch  
+### 1. Fork the repository  
+### 2. Create your feature branch  
    ```bash
    git checkout -b feature/NewProject
    ```
