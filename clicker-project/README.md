@@ -1,6 +1,6 @@
-# 🌌 Astrology Insights Engine
+# 🌍 Multilingual Clicker Effect
 
-> **A deterministic, logic-based web application that calculates personalized insights without a database.**
+> **An interactive DOM visualization project that generates animated greetings on user interaction.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
@@ -21,9 +21,9 @@
 
 ## 🔍 About the Project <a name="about"></a>
 
-The **Astrology Insights Engine** is a vanilla JavaScript application designed to demonstrate DOM manipulation and algorithmic data retrieval. Unlike random fortune generators, this app uses **deterministic math** to map user inputs (Name, DOB) to specific indices in pre-defined data arrays.
+The **Multilingual Clicker Effect** is a visual experiment in **Dynamic DOM Creation**. 
 
-The result is a consistent, personalized "reading" that includes your Zodiac sign, a daily compliment, an empathy statement, a recommendation, and a future prediction.
+Instead of static content, this application treats the browser window as an interactive canvas. Wherever the user clicks, the application generates a temporary "bubble" containing a greeting ("Hello") in one of 20 different languages. The element expands, fades out, and is automatically removed from the DOM to maintain performance.
 
 ---
 
@@ -31,32 +31,31 @@ The result is a consistent, personalized "reading" that includes your Zodiac sig
 
 | Domain | Technologies Used |
 | :--- | :--- |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
-| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Flexbox, Linear Gradients) |
-| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (ES6 Arrays, Event Listeners) |
+| **Structure** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
+| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Keyframe Animations) |
+| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (DOM Injection, Math.random) |
 
 ---
 
 ## ⚙️ How It Works (The Logic) <a name="logic"></a>
 
-The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) to handle array indexing, ensuring the app never crashes even with large number inputs.
+The application combines **Event Listeners** with **CSS Animations** to create a fluid user experience.
 
-| Insight Type | Input Used | The Algorithm | Data Source Size |
-| :--- | :--- | :--- | :--- |
-| **Zodiac Sign** | `Month` | `zodiacSigns[month - 1]` | 12 items |
-| **Compliment** | `Day` | `compliments[day - 1]` | 31 items |
-| **Victim Card** | `Year` | `victimCardCompliments[year % 20]` | 20 items |
-| **Recommendation** | `Day`, `Month` | `recommendations[(day * month) % 30]` | 30 items |
-| **Prediction** | `Name`, `Surname` | `predictions[(name.length * surname.length) % 20]` | 20 items |
+| Component | The Code Logic | Functionality |
+| :--- | :--- | :--- |
+| **Coordinate Tracking** | `e.clientX`, `e.clientY` | Captures the exact pixel position of the mouse cursor to place the element. |
+| **Randomization** | `Math.floor(Math.random() * length)` | Selects a random language and background color from pre-defined arrays. |
+| **Animation Lifecycle** | `@keyframes grow` | Scales the element from 1x to 3x size while fading opacity from 1 to 0 over 5 seconds. |
+| **Garbage Collection** | `setTimeout(..., 5000)` | Automatically removes the DOM node after animation ends to prevent memory leaks. |
 
 ---
 
 ## 🚀 Features <a name="features"></a>
 
-* **✨ Semantic Form Handling**: Prevents default submission to process data via JS.
-* **🎨 Responsive Design**: Centered layout with a deep-space gradient background (`#4a90e2` to `#50c1e9`).
-* **🔢 Zero-Index Correction**: Automatically adjusts user inputs (1-12) to match array indices (0-11).
-* **🔒 Input Validation**: HTML5 attributes ensure strict ranges (e.g., Days 1-31, Years 1900-2026).
+* **🖱️ Mouse Tracking**: Elements are spawned exactly where the user interacts.
+* **🎨 20-Color Palette**: Uses a diverse array of hex codes (e.g., `#FF5733`, `#2ECC71`) for visual variety.
+* **🌐 Global Greetings**: Displays "Hello" in 20 languages including *Namaste*, *Konnichiwa*, *Hola*, and *Ciao*.
+* **⚡ Auto-Cleanup**: The code self-cleans by removing elements from the DOM after 5 seconds, keeping the browser fast.
 
 ---
 
@@ -72,7 +71,7 @@ Since this project uses **Vanilla JavaScript**, no `npm install` or build steps 
 
 3.  **Navigate to the Folder**
     ```bash
-    cd javascript-mini-projects/astrology-project
+    cd javascript-mini-projects/clicker-project
     ```
 
 4.  **Run the App**

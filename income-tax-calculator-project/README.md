@@ -1,6 +1,6 @@
-# 🌌 Astrology Insights Engine
+# 💰 Income Tax Calculator
 
-> **A deterministic, logic-based web application that calculates personalized insights without a database.**
+> **A financial utility tool that calculates progressive tax liability based on income slabs.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
@@ -21,9 +21,9 @@
 
 ## 🔍 About the Project <a name="about"></a>
 
-The **Astrology Insights Engine** is a vanilla JavaScript application designed to demonstrate DOM manipulation and algorithmic data retrieval. Unlike random fortune generators, this app uses **deterministic math** to map user inputs (Name, DOB) to specific indices in pre-defined data arrays.
+The **Income Tax Calculator** is a logic-driven application designed to simplify complex financial calculations.
 
-The result is a consistent, personalized "reading" that includes your Zodiac sign, a daily compliment, an empathy statement, a recommendation, and a future prediction.
+It implements a **Progressive Tax Regime** system where different portions of a user's income are taxed at different rates. Instead of a flat percentage, the application uses a "tiered" approach (Slabs) to compute the exact tax payable in Rupees (₹). It serves as a practical demonstration of complex **Conditional Logic (`if-else-if`)** in JavaScript.
 
 ---
 
@@ -31,32 +31,32 @@ The result is a consistent, personalized "reading" that includes your Zodiac sig
 
 | Domain | Technologies Used |
 | :--- | :--- |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
-| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Flexbox, Linear Gradients) |
-| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (ES6 Arrays, Event Listeners) |
+| **Structure** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
+| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Inline Styles, Flexbox) |
+| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (Conditional Branching, Form Handling) |
 
 ---
 
 ## ⚙️ How It Works (The Logic) <a name="logic"></a>
 
-The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) to handle array indexing, ensuring the app never crashes even with large number inputs.
+The core engine relies on an `if-else-if` ladder that categorizes the input income into specific brackets. It calculates tax on the *exceeding amount* for that specific bracket and adds the cumulative tax from lower brackets.
 
-| Insight Type | Input Used | The Algorithm | Data Source Size |
-| :--- | :--- | :--- | :--- |
-| **Zodiac Sign** | `Month` | `zodiacSigns[month - 1]` | 12 items |
-| **Compliment** | `Day` | `compliments[day - 1]` | 31 items |
-| **Victim Card** | `Year` | `victimCardCompliments[year % 20]` | 20 items |
-| **Recommendation** | `Day`, `Month` | `recommendations[(day * month) % 30]` | 30 items |
-| **Prediction** | `Name`, `Surname` | `predictions[(name.length * surname.length) % 20]` | 20 items |
+| Income Slab (₹) | Tax Rate | Calculation Logic |
+| :--- | :--- | :--- |
+| **0 - 12,00,000** | **0%** | `calc = 0` (Tax Free) |
+| **12L - 16,00,000** | **15%** | `(Income - 12L) * 0.15` |
+| **16L - 20,00,000** | **20%** | `(Income - 16L) * 0.20 + 60,000` (Prev Slab Tax) |
+| **20L - 24,00,000** | **25%** | `(Income - 20L) * 0.25 + 1,40,000` (Cumulative Tax) |
+| **Above 24,00,000** | **30%** | `(Income - 24L) * 0.30 + 2,40,000` (Cumulative Tax) |
 
 ---
 
 ## 🚀 Features <a name="features"></a>
 
-* **✨ Semantic Form Handling**: Prevents default submission to process data via JS.
-* **🎨 Responsive Design**: Centered layout with a deep-space gradient background (`#4a90e2` to `#50c1e9`).
-* **🔢 Zero-Index Correction**: Automatically adjusts user inputs (1-12) to match array indices (0-11).
-* **🔒 Input Validation**: HTML5 attributes ensure strict ranges (e.g., Days 1-31, Years 1900-2026).
+* **⚡ Form Control**: Uses `e.preventDefault()` to process data instantly without reloading the page.
+* **🔄 Auto-Reset**: Automatically clears the input field after every calculation for a smooth user experience.
+* **🌑 Dark Theme**: Features a deep black background (`rgba(0, 0, 0, 0.945)`) with white text for high contrast.
+* **💲 Currency Formatting**: Outputs the final result with the Indian Rupee symbol (`₹`).
 
 ---
 
@@ -65,17 +65,16 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
 1.  **Clone the Repository**
-    Replace `your-username` with your GitHub username
     ```bash
     git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
     ```
 
-3.  **Navigate to the Folder**
+2.  **Navigate to the Folder**
     ```bash
-    cd javascript-mini-projects/astrology-project
+    cd javascript-mini-projects/income-tax-calculator-project
     ```
 
-4.  **Run the App**
+3.  **Run the App**
     * Simply double-click `index.html` to open it in your browser.
     * *Optional:* Use Live Server in VS Code for a better experience.
 

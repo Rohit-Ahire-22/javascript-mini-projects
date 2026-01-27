@@ -1,6 +1,6 @@
-# 🌌 Astrology Insights Engine
+# 📝 JavaScript Basics Quiz
 
-> **A deterministic, logic-based web application that calculates personalized insights without a database.**
+> **An interactive, form-based quiz application that evaluates user knowledge using the FormData API.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
@@ -21,9 +21,9 @@
 
 ## 🔍 About the Project <a name="about"></a>
 
-The **Astrology Insights Engine** is a vanilla JavaScript application designed to demonstrate DOM manipulation and algorithmic data retrieval. Unlike random fortune generators, this app uses **deterministic math** to map user inputs (Name, DOB) to specific indices in pre-defined data arrays.
+The **JavaScript Basics Quiz** is a lightweight educational tool designed to test fundamental coding concepts.
 
-The result is a consistent, personalized "reading" that includes your Zodiac sign, a daily compliment, an empathy statement, a recommendation, and a future prediction.
+Unlike simple if/else chains, this project utilizes the **FormData API** to efficiently capture user input. It iterates through the form data dynamically, comparing user selection against a stored object of correct answers. This method is highly scalable—you can add more questions to the HTML without rewriting the JavaScript logic.
 
 ---
 
@@ -31,32 +31,31 @@ The result is a consistent, personalized "reading" that includes your Zodiac sig
 
 | Domain | Technologies Used |
 | :--- | :--- |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
-| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Flexbox, Linear Gradients) |
-| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (ES6 Arrays, Event Listeners) |
+| **Structure** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
+| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Box Shadows, Hover States) |
+| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (FormData API, Objects, Loops) |
 
 ---
 
 ## ⚙️ How It Works (The Logic) <a name="logic"></a>
 
-The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) to handle array indexing, ensuring the app never crashes even with large number inputs.
+The core engine relies on comparing a `FormData` iterator against a defined "Answer Key" object.
 
-| Insight Type | Input Used | The Algorithm | Data Source Size |
-| :--- | :--- | :--- | :--- |
-| **Zodiac Sign** | `Month` | `zodiacSigns[month - 1]` | 12 items |
-| **Compliment** | `Day` | `compliments[day - 1]` | 31 items |
-| **Victim Card** | `Year` | `victimCardCompliments[year % 20]` | 20 items |
-| **Recommendation** | `Day`, `Month` | `recommendations[(day * month) % 30]` | 30 items |
-| **Prediction** | `Name`, `Surname` | `predictions[(name.length * surname.length) % 20]` | 20 items |
+| Component | Code Logic | Description |
+| :--- | :--- | :--- |
+| **Answer Key** | `const answers = { q1: "var", ... }` | A key-value object storing the correct answer for every question ID. |
+| **Data Capture** | `new FormData(form)` | Instantly retrieves all checked radio buttons from the form without manual ID selection. |
+| **Iteration** | `for (let [name, value] of data.entries())` | Loops through the user's submitted answers one by one. |
+| **Validation** | `if (answers[name] == value)` | Compares the user's input against the Answer Key. If they match, the score increments. |
 
 ---
 
 ## 🚀 Features <a name="features"></a>
 
-* **✨ Semantic Form Handling**: Prevents default submission to process data via JS.
-* **🎨 Responsive Design**: Centered layout with a deep-space gradient background (`#4a90e2` to `#50c1e9`).
-* **🔢 Zero-Index Correction**: Automatically adjusts user inputs (1-12) to match array indices (0-11).
-* **🔒 Input Validation**: HTML5 attributes ensure strict ranges (e.g., Days 1-31, Years 1900-2026).
+* **⚡ Efficient Iteration**: Uses a `for...of` loop to handle any number of questions automatically.
+* **🔄 Auto-Reset**: The form clears all selections automatically after submission using `form.reset()`.
+* **🎨 Visual Feedback**: A clean, white card layout with soft shadows (`box-shadow: 0 4px 10px`) for a modern look.
+* **🖱️ Interactive UI**: Submit button features a color-change hover effect for better user engagement.
 
 ---
 
@@ -65,17 +64,16 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
 1.  **Clone the Repository**
-    Replace `your-username` with your GitHub username
     ```bash
     git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
     ```
 
-3.  **Navigate to the Folder**
+2.  **Navigate to the Folder**
     ```bash
-    cd javascript-mini-projects/astrology-project
+    cd javascript-mini-projects/quiz-project
     ```
 
-4.  **Run the App**
+3.  **Run the App**
     * Simply double-click `index.html` to open it in your browser.
     * *Optional:* Use Live Server in VS Code for a better experience.
 

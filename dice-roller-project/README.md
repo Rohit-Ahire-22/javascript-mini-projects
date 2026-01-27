@@ -1,6 +1,6 @@
-# 🌌 Astrology Insights Engine
+# 🎲 Dice Roller
 
-> **A deterministic, logic-based web application that calculates personalized insights without a database.**
+> **A dynamic probability simulation tool that generates random dice rolls with visual feedback.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
@@ -21,9 +21,9 @@
 
 ## 🔍 About the Project <a name="about"></a>
 
-The **Astrology Insights Engine** is a vanilla JavaScript application designed to demonstrate DOM manipulation and algorithmic data retrieval. Unlike random fortune generators, this app uses **deterministic math** to map user inputs (Name, DOB) to specific indices in pre-defined data arrays.
+The **Dice Roller** is an interactive web application designed to simulate the physical act of rolling multiple dice.
 
-The result is a consistent, personalized "reading" that includes your Zodiac sign, a daily compliment, an empathy statement, a recommendation, and a future prediction.
+Unlike simple random number generators, this project provides a dual-layer output: it calculates the numerical value and instantly maps it to a corresponding visual representation (dice image). It demonstrates effective use of **loops**, **arrays**, and **template literals** in Vanilla JavaScript.
 
 ---
 
@@ -31,32 +31,31 @@ The result is a consistent, personalized "reading" that includes your Zodiac sig
 
 | Domain | Technologies Used |
 | :--- | :--- |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
-| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Flexbox, Linear Gradients) |
-| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (ES6 Arrays, Event Listeners) |
+| **Structure** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
+| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) (Flexbox, Responsive Layout) |
+| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (Math.random, Loops, DOM Injection) |
 
 ---
 
 ## ⚙️ How It Works (The Logic) <a name="logic"></a>
 
-The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) to handle array indexing, ensuring the app never crashes even with large number inputs.
+The core functionality relies on a `for` loop that iterates based on the user's input count, generating independent random values for each iteration.
 
-| Insight Type | Input Used | The Algorithm | Data Source Size |
-| :--- | :--- | :--- | :--- |
-| **Zodiac Sign** | `Month` | `zodiacSigns[month - 1]` | 12 items |
-| **Compliment** | `Day` | `compliments[day - 1]` | 31 items |
-| **Victim Card** | `Year` | `victimCardCompliments[year % 20]` | 20 items |
-| **Recommendation** | `Day`, `Month` | `recommendations[(day * month) % 30]` | 30 items |
-| **Prediction** | `Name`, `Surname` | `predictions[(name.length * surname.length) % 20]` | 20 items |
+| Component | The Code Logic | Functionality |
+| :--- | :--- | :--- |
+| **Input Handling** | `myInput.value` | Captures the number of dice the user wants to roll. |
+| **Randomization** | `Math.floor(Math.random() * 6) + 1` | Generates a random integer between 1 and 6 for every die. |
+| **Image Mapping** | ``src="dice_images/${value}.png"`` | Dynamically constructs the image file path using the random number. |
+| **DOM Injection** | `diceImg.innerHTML = images.join(" ")` | Inserts the generated HTML string of images directly into the page. |
 
 ---
 
 ## 🚀 Features <a name="features"></a>
 
-* **✨ Semantic Form Handling**: Prevents default submission to process data via JS.
-* **🎨 Responsive Design**: Centered layout with a deep-space gradient background (`#4a90e2` to `#50c1e9`).
-* **🔢 Zero-Index Correction**: Automatically adjusts user inputs (1-12) to match array indices (0-11).
-* **🔒 Input Validation**: HTML5 attributes ensure strict ranges (e.g., Days 1-31, Years 1900-2026).
+* **🔢 Scalable Inputs**: Can roll 1 die or 100+ dice simultaneously based on user input.
+* **🖼️ Visual Feedback**: Instantly renders high-quality dice images corresponding to the rolled numbers.
+* **📱 Responsive Design**: Uses a centered Flexbox layout that adapts to the screen size.
+* **⚡ Text & Visual Output**: Displays both the numeric values (e.g., "Dice: 4, 2") and the visual dice faces.
 
 ---
 
@@ -65,17 +64,16 @@ The core "magic" lies in `index.js`. We use mathematical modulo operators (`%`) 
 Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
 1.  **Clone the Repository**
-    Replace `your-username` with your GitHub username
     ```bash
     git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
     ```
 
-3.  **Navigate to the Folder**
+2.  **Navigate to the Folder**
     ```bash
-    cd javascript-mini-projects/astrology-project
+    cd javascript-mini-projects/dice-roller-project
     ```
 
-4.  **Run the App**
+3.  **Run the App**
     * Simply double-click `index.html` to open it in your browser.
     * *Optional:* Use Live Server in VS Code for a better experience.
 
