@@ -89,13 +89,15 @@ Built using the **Core Web Trinity** — no frameworks, no dependencies.
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
+```
 
-### 2️⃣ Navigate to a Project
+## 2️⃣ Navigate to a Project
 
 Choose any project folder from the list above.
 
 ```bash
 cd javascript-mini-projects/to-do-list-project
+```
 
 ## 🚀 Launch
 
@@ -117,6 +119,7 @@ Contributions are always welcome! If you have a cool idea for a mini-project or 
 2. Create your feature branch  
    ```bash
    git checkout -b feature/NewProject
+   ```
 ### Commit your changes
 ```bash
 git commit -m "Add NewProject"
