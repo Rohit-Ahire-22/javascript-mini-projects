@@ -71,7 +71,7 @@ Since this project uses **Vanilla JavaScript**, no `npm install` or build steps 
 
 3.  **Navigate to the Folder**
     ```bash
-    cd my-js-project/clicker-project
+    cd javascript-mini-projects/clicker-project
     ```
 
 4.  **Run the App**
