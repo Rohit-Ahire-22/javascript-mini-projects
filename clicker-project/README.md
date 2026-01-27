@@ -66,7 +66,7 @@ Since this project uses **Vanilla JavaScript**, no `npm install` or build steps 
 1.  **Clone the Repository**
     Replace `your-username` with your GitHub username
     ```bash
-    git clone https://github.com/your-username/javascript-mini-projects.git
+    git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
     ```
 
 3.  **Navigate to the Folder**
