@@ -120,16 +120,16 @@ Contributions are always welcome! If you have a cool idea for a mini-project or 
    ```bash
    git checkout -b feature/NewProject
    ```
-### Commit your changes
+### 3.Commit your changes
 ```bash
 git commit -m "Add NewProject"
 ```
-### Push to the branch
+### 4.Push to the branch
 ```bash
 git push origin feature/NewProject
 ```
 
-### Open a Pull Request
+### 5.Open a Pull Request
 Open a Pull Request on GitHub from your feature branch.
 
 ---
