@@ -70,7 +70,7 @@ Since this project uses **Vanilla JavaScript**, no `npm install` or build steps 
 
 3.  **Navigate to the Folder**
     ```bash
-    cd my-js-project/background-color-changer-project
+    cd javscript-mini-projects/background-color-changer-project
     ```
 
 4.  **Run the App**
