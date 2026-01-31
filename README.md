@@ -1,6 +1,6 @@
 # 🚀 JavaScript Mini Projects Collection
 
-> **A curated collection of Vanilla JavaScript applications demonstrating core web development concepts, algorithms, and DOM manipulation mastery.**
+> **A curated collection of Vanilla JavaScript applications demonstrating core web development concepts, algorithms, and DOM manipulation mastery — now expanded with Advanced Async/Await and API integration.**
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/Rohit-Ahire-22/javascript-mini-projects?style=for-the-badge&logo=github&color=blue" alt="Repo Size">
@@ -13,7 +13,7 @@
 
 ## 📖 About The Repository
 
-This repository is a journey through the fundamentals of **Web Development**. It contains **14+ distinct projects** built entirely with **HTML, CSS, and Vanilla JavaScript**.
+This repository is a journey through the fundamentals of **Web Development**. It contains **15+ distinct projects** built entirely with **HTML, CSS, and Vanilla JavaScript**.
 
 Unlike framework-based projects (React, Vue, etc.), these mini-apps focus on **first-principles JavaScript**:
 
@@ -21,6 +21,7 @@ Unlike framework-based projects (React, Vue, etc.), these mini-apps focus on **f
 - **Algorithmic Logic** – Using `Math`, `Date`, and conditional reasoning  
 - **State Management** – Handling data without external libraries  
 - **Event Handling** – Mastering events, bubbling, delegation, and interactions  
+- **Asynchronous Programming** – Consuming external APIs using `Fetch` and `Async/Await`
 
 ---
 
