@@ -72,6 +72,15 @@ Unlike framework-based projects (React, Vue, etc.), these mini-apps focus on **f
 
 ---
 
+### ⚡ Advanced & API Integrations
+*Intermediate-level applications involving Async/Await, External APIs, and complex data handling.*
+
+| Project Name | Key Concepts Learned | Complexity |
+| :--- | :--- | :--- |
+| **[GitHub User Fetcher](./github-profile-searcher-project)** | `Async/Await`, `Fetch API`, Error Handling, JSON Parsing | ⭐⭐⭐⭐⭐ |
+
+---
+
 ## 💻 Tech Stack
 
 Built using the **Core Web Trinity** — no frameworks, no dependencies.
@@ -81,15 +90,6 @@ Built using the **Core Web Trinity** — no frameworks, no dependencies.
 | **HTML5** | • **Semantic Structure** (Header, Main, Section)<br>• **Forms & Inputs** (Text, Number, Radio, Checkbox)<br>• **Native Validation** (Required, Min/Max attributes) |
 | **CSS3** | • **Layouts:** Flexbox & CSS Grid centering techniques<br>• **Interactivity:** Hover effects, Transitions (`transform: scale`)<br>• **Responsiveness:** Media Queries & fluid widths (`flex-wrap`)<br>• **Visuals:** Box Shadows, Gradients, and Dynamic Coloring |
 | **JavaScript (ES6+)** | • **Async Logic:** `Async/Await`, `Fetch API`, `Promises`, `JSON Parsing`<br>• **DOM Mastery:** `createElement`, `append`, `remove`, `classList` toggling<br>• **Event Handling:** Event Delegation, Bubbling, Form Submission (`e.preventDefault`)<br>• **Algorithms:** `Math.random`, `Date` calculations, `setInterval`, Array Iteration (`for...of`) |
-
----
-
-### ⚡ Advanced & API Integrations
-*Intermediate-level applications involving Async/Await, External APIs, and complex data handling.*
-
-| Project Name | Key Concepts Learned | Complexity |
-| :--- | :--- | :--- |
-| **[GitHub User Fetcher](./github-profile-searcher-project)** | `Async/Await`, `Fetch API`, Error Handling, JSON Parsing | ⭐⭐⭐⭐⭐ |
 
 ---
 
