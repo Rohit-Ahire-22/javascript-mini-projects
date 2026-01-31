@@ -76,11 +76,11 @@ Unlike framework-based projects (React, Vue, etc.), these mini-apps focus on **f
 
 Built using the **Core Web Trinity** — no frameworks, no dependencies.
 
-| Technology | Usage |
+| Technology | Usage & Concepts Applied |
 | :--- | :--- |
-| **HTML5** | Semantic structure |
-| **CSS3** | Styling, animations |
-| **JavaScript (ES6+)** | Logic, DOM, events |
+| **HTML5** | • **Semantic Structure** (Header, Main, Section)<br>• **Forms & Inputs** (Text, Number, Radio, Checkbox)<br>• **Native Validation** (Required, Min/Max attributes) |
+| **CSS3** | • **Layouts:** Flexbox & CSS Grid centering techniques<br>• **Interactivity:** Hover effects, Transitions (`transform: scale`)<br>• **Responsiveness:** Media Queries & fluid widths (`flex-wrap`)<br>• **Visuals:** Box Shadows, Gradients, and Dynamic Coloring |
+| **JavaScript (ES6+)** | • **Async Logic:** `Async/Await`, `Fetch API`, `Promises`, `JSON Parsing`<br>• **DOM Mastery:** `createElement`, `append`, `remove`, `classList` toggling<br>• **Event Handling:** Event Delegation, Bubbling, Form Submission (`e.preventDefault`)<br>• **Algorithms:** `Math.random`, `Date` calculations, `setInterval`, Array Iteration (`for...of`) |
 
 ---
 
