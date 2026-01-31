@@ -84,6 +84,15 @@ Built using the **Core Web Trinity** — no frameworks, no dependencies.
 
 ---
 
+### ⚡ Advanced & API Integrations
+*Intermediate-level applications involving Async/Await, External APIs, and complex data handling.*
+
+| Project Name | Key Concepts Learned | Complexity |
+| :--- | :--- | :--- |
+| **[GitHub User Fetcher](./github-profile-searcher-project)** | `Async/Await`, `Fetch API`, Error Handling, JSON Parsing | ⭐⭐⭐⭐⭐ |
+
+---
+
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
