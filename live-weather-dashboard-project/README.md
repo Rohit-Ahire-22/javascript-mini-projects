@@ -67,23 +67,22 @@ The application logic is modularized into four distinct functions for readabilit
 
 ## 💻 Installation & Setup <a name="setup"></a>
 
-Follow these commands to get the project running on your local machine.
+Since this project uses **Vanilla JavaScript**, no `npm install` or build steps are required.
 
-### 1. Clone the Repository
-Open your terminal (Command Prompt, PowerShell, or Git Bash) and run:
+1.  **Clone the Repository**
     ```bash
     git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
     ```
-    
-### 2.  **Navigate to the Folder**
+
+2.  **Navigate to the Folder**
     ```bash
     cd javascript-mini-projects/income-tax-calculator-project
     ```
-    
-### 3.  **Run the App**
+
+3.  **Run the App**
     * Simply double-click `index.html` to open it in your browser.
-    * Option B (Recommended): If using VS Code, right-click `index.html` and select "Open with Live Server.
-    
+    * *Optional:* Use Live Server in VS Code for a better experience.
+
 ---
 
 ## 🔑 Configuration Guide <a name="config"></a>
