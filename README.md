@@ -78,7 +78,7 @@ Unlike framework-based projects (React, Vue, etc.), these mini-apps focus on **f
 
 | Project Name | Key Concepts Learned | Complexity |
 | :--- | :--- | :--- |
-| **[GitHub User Fetcher](./github-profile-searcher-project)** | `Async/Await`, `Fetch API`, Error Handling, JSON Parsing | ⭐⭐⭐⭐⭐ |
+| **[GitHub User Fetcher](./github-profile-searcher-project)** | `Async/Await`, `Fetch API`, Error Handling, JSON Parsing | ⭐⭐⭐⭐⭐ |                                  | **[Real-Time Weather App](./live-weather-dashboard-project)** | `Async/Await`, `Fetch API`, API Key Management, ES6 Destructuring | ⭐⭐⭐⭐⭐ |
 
 ---
 
