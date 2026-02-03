@@ -54,14 +54,14 @@ It solves the problem of "How do I fetch and display external data?" by demonstr
 
 ## 🧠 Code Structure & Logic <a name="logic"></a>
 
-The application logic is modularized into four distinct functions for readability and maintenance:
+The application combines asynchronous data fetching with dynamic DOM injection.
 
-| Function Name | Responsibility |
-| :--- | :--- |
-| `getWeatherData(city)` | **The Data Fetcher:** Constructs the API URL and fetches raw JSON data. Throws an error if the response is not "OK". |
-| `displayWeatherInfo(data)` | **The UI Builder:** Destructures the complex JSON object to extract `temp`, `humidity`, and `description`, then creates and appends HTML elements dynamically. |
-| `gettingEmoji(id)` | **The Visualizer:** Takes a numeric Weather ID (from the API) and returns the corresponding emoji using a range-based switch statement. |
-| `displayError(msg)` | **The Guardian:** Clears previous results and injects a bold error message into the DOM when something goes wrong. |
+| Concept | Code Logic | Description |
+| :--- | :--- | :--- |
+| **API Request** | `await fetch(apiUrl)` | Sends a request to `api.openweathermap.org` querying the specific city. |
+| **Data Extraction** | `const {name, main, weather}` | Destructures the complex JSON response to extract only relevant data like `temp` and `humidity`. |
+| **Emoji Engine** | `switch(true) ... case id>=200` | A custom logic function that maps numerical weather IDs (e.g., 300-400 for drizzle) to appropriate emojis (🌦️). |
+| **Error Handling** | `displayError(msg)` | Catches failed requests (e.g., 404 City Not Found) and updates the DOM with a user-friendly error message. |
 
 ---
 
