@@ -71,5 +71,49 @@ Follow these commands to get the project running on your local machine.
 
 ### 1. Clone the Repository
 Open your terminal (Command Prompt, PowerShell, or Git Bash) and run:
-```bash
-git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
+    ```bash
+    git clone https://github.com/Rohit-Ahire-22/javascript-mini-projects.git
+    ```
+    
+### 2.  **Navigate to the Folder**
+    ```bash
+    cd javascript-mini-projects/income-tax-calculator-project
+    ```
+    
+### 3.  **Run the App**
+    * Simply double-click `index.html` to open it in your browser.
+    * Option B (Recommended): If using VS Code, right-click `index.html` and select "Open with Live Server.
+    
+---
+
+## 🔑 Configuration Guide <a name="config"></a>
+
+⚠️ CRITICAL STEP: This app requires an API Key to function.
+
+1.  **Get an API Key**
+    * Sign up for a free account at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
+    * Generate a free API Key.
+
+2.  **Configure the Code**
+    * Open `script.js`.
+    * Find the line: `const apikey = "YOUR_API_KEY_HERE";`.
+    * Replace `"YOUR_API_KEY_HERE"` with your actual key string(e.g., "a1b2c3d4e5...").
+
+3.  **Run the App**
+    * Open `index.html` in your browser.
+    * Type a city (e.g., "London", "Mumbai") and hit Enter!
+    
+---
+
+## 📦 JavaScript Mini Projects <a name="context"></a>
+> **Note:** This project is part of a larger collection.
+
+This repository contains a collection of beginner-to-intermediate JavaScript mini projects created to strengthen core web development concepts.
+
+**The goal of this repository is to learn by building**. It spans from basic **DOM manipulation** (To-Do List) to **advanced API Integrations** (like this Weather App).
+
+**Contribution**: Suggestions and improvements are welcome!
+
+**Support**: If this helped you, please star ⭐️ the repository.
+
+**Happy Coding!** 🚀
